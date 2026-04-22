@@ -1,0 +1,53 @@
+[
+  {
+    "id": "job-001",
+    "title": "Software Engineer",
+    "department": "Engineering",
+    "location": "Remote",
+    "type": "Full-time",
+    "description": "Join our core engineering team to build scalable backend services and APIs. You'll work closely with product and design to deliver high-quality features that reach millions of users.",
+    "requirements": [
+      "3+ years of professional software engineering experience",
+      "Proficiency in Python, Go, or TypeScript",
+      "Experience with REST APIs and microservices architecture",
+      "Familiarity with cloud platforms (AWS, GCP, or Azure)",
+      "Strong understanding of data structures and algorithms",
+      "Experience with SQL and NoSQL databases",
+      "Excellent communication and collaboration skills"
+    ]
+  },
+  {
+    "id": "job-002",
+    "title": "Product Designer",
+    "department": "Design",
+    "location": "Hybrid — New York, NY",
+    "type": "Full-time",
+    "description": "Shape the user experience of our flagship product. You'll own end-to-end design — from user research and wireframes to polished, production-ready UI — in close partnership with engineering and product.",
+    "requirements": [
+      "4+ years of product/UX design experience",
+      "Expert-level proficiency in Figma",
+      "Strong portfolio demonstrating complex UI/UX work",
+      "Experience conducting user interviews and usability tests",
+      "Ability to translate user insights into design decisions",
+      "Understanding of accessibility standards (WCAG 2.1)",
+      "Experience designing for web and mobile platforms"
+    ]
+  },
+  {
+    "id": "job-003",
+    "title": "Data Analyst",
+    "department": "Analytics",
+    "location": "Remote",
+    "type": "Contract",
+    "description": "Turn raw data into actionable insights that drive business decisions. You'll build dashboards, run analyses, and partner with teams across the company to answer critical questions with data.",
+    "requirements": [
+      "2+ years of data analysis or business intelligence experience",
+      "Advanced SQL skills (window functions, CTEs, query optimization)",
+      "Experience with BI tools (Tableau, Looker, or Metabase)",
+      "Proficiency in Python or R for data manipulation",
+      "Familiarity with data warehouses (BigQuery, Snowflake, or Redshift)",
+      "Strong data storytelling and visualization skills",
+      "Attention to detail and a rigorous analytical mindset"
+    ]
+  }
+]
