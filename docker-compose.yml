@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - MASTRA_STUDIO_PORT=4000
+    depends_on:
+      - db
+    restart: always
+
+  # Optional: You can run mastra studio as a separate service using the same image
+  mastra-studio:
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+    command: ["npx", "mastra", "dev", "--port", "4000"]
+    ports:
+      - "4000:4000"
+    environment:
+      - NODE_ENV=development
+    depends_on:
+      - db
+    restart: always
+
+  db:
+    image: ankane/pgvector:latest
+    environment:
+      POSTGRES_USER: mastra
+      POSTGRES_PASSWORD: mastra_password
+      POSTGRES_DB: mastra_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    restart: always
+
+volumes:
+  pgdata:
